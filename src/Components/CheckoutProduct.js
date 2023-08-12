@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS/CheckoutProduct.css";
 
 const CheckoutProduct = (props) => {
+  let numberOfitem;
   return (
     <React.Fragment>
       <div className="checkout_product">
@@ -22,8 +23,7 @@ const CheckoutProduct = (props) => {
             <strong>20</strong>
           </p>
           <div className="input_quantity">
-            <label for="in_quantity">Quantity: </label>
-            <input type="number" name="in_quantity" placeholder="items..."/>
+            <label for="in_quantity">Quantity: X {numberOfitem}</label>
           </div>
           <button>Remove Item</button>
         </div>

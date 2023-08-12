@@ -9,6 +9,52 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CartProvider from "./StateProvider";
 
 function App() {
+
+  const prod_details=[
+    {
+      id:1123123321,
+      title:'Dream World Bluetooth Wireless Headphone RG-518 (3)',
+      price:24,
+      rating:4,
+      image:'https://m.media-amazon.com/images/I/31jSfjq9GJL._SX300_SY300_QL70_FMwebp_.jpg',
+    },
+    {
+      id:1123123321,
+      title:'Fire-Boltt Ninja 3 Smartwatch Full Touch 1.69 & 60 Sports Modes with IP68, Sp02 Tracking',
+      price:50,
+      rating:4,
+      image:'https://m.media-amazon.com/images/I/61ZgWdNPmfL._SX522_.jpg',
+    },
+    {
+      id:1123123321,
+      title:'Noise ColorFit Pulse Grand Smart Watch with 1.69" HD Display, 60 Sports Modes',
+      price:18,
+      rating:4,
+      image:'https://m.media-amazon.com/images/I/618mFEP9mTL._SX679_.jpg'
+    },
+    {
+      id:1123123321,
+      title:'Dream World Bluetooth Wireless Headphone RG-518 (3)',
+      price:24,
+      rating:4,
+      image:'https://m.media-amazon.com/images/I/31SjuYsFAXL._SX300_SY300_QL70_FMwebp_.jpg',
+    },
+    {
+      id:1123123321,
+      title:'ASTOUND Bluetooth Wireless Earphones Earbuds Headphones',
+      price:24,
+      rating:4,
+      image:'https://m.media-amazon.com/images/I/51pQeFfwiCL._SX355_.jpg',
+    },
+    {
+      id:1123123331,
+      title:'Lenovo Ideapad Gaming 3 AMD Ryzen 5 5600H 15.6" (39.62cm)',
+      price:749,
+      rating:4,
+      image:'https://m.media-amazon.com/images/I/71--IQUHVwL._SX679_.jpg',
+    },
+  ]
+
   return (
     <CartProvider>
       <div className="App">
@@ -18,7 +64,7 @@ function App() {
             element={
               <React.Fragment>
                 <Header />
-                <Home />
+                <Home product_detail={prod_details}/>
               </React.Fragment>
             }
           ></Route>
@@ -27,7 +73,7 @@ function App() {
             element={
               <React.Fragment>
                 <Header />
-                <Checkout />
+                <Checkout  product_detail={prod_details}/>
               </React.Fragment>
             }
           />
