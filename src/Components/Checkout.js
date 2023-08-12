@@ -3,7 +3,6 @@ import "../CSS/Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
 
-<<<<<<< HEAD
 import { useContext } from "react";
 import CartContext from "../CartContext";
 
@@ -14,10 +13,6 @@ const Checkout = (props) => {
   let arr= cartCtx.items;
   console.log(arr);
 
-=======
-const Checkout = (props) => {
-  console.log(props);
->>>>>>> refs/remotes/origin/main
   return (
     <div className="checkout">
       <div className="checkout_left">
@@ -28,11 +23,7 @@ const Checkout = (props) => {
         />
         <div>
           <h2 className="checkout_title">Your Shopping Basket</h2>
-<<<<<<< HEAD
           <CheckoutProduct arra={arr}/>
-=======
-          <CheckoutProduct />
->>>>>>> refs/remotes/origin/main
         </div>
       </div>
       <div className="checkout_right">
