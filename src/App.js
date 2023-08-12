@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CartProvider from "./StateProvider";
 
 function App() {
+<<<<<<< HEAD
 
   const prod_details=[
     {
@@ -55,6 +56,8 @@ function App() {
     },
   ]
 
+=======
+>>>>>>> refs/remotes/origin/main
   return (
     <CartProvider>
       <div className="App">
@@ -64,7 +67,11 @@ function App() {
             element={
               <React.Fragment>
                 <Header />
+<<<<<<< HEAD
                 <Home product_detail={prod_details}/>
+=======
+                <Home />
+>>>>>>> refs/remotes/origin/main
               </React.Fragment>
             }
           ></Route>
@@ -73,7 +80,11 @@ function App() {
             element={
               <React.Fragment>
                 <Header />
+<<<<<<< HEAD
                 <Checkout  product_detail={prod_details}/>
+=======
+                <Checkout />
+>>>>>>> refs/remotes/origin/main
               </React.Fragment>
             }
           />

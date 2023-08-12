@@ -2,7 +2,10 @@ import React from "react";
 import "../CSS/CheckoutProduct.css";
 
 const CheckoutProduct = (props) => {
+<<<<<<< HEAD
   let numberOfitem;
+=======
+>>>>>>> refs/remotes/origin/main
   return (
     <React.Fragment>
       <div className="checkout_product">
@@ -23,7 +26,12 @@ const CheckoutProduct = (props) => {
             <strong>20</strong>
           </p>
           <div className="input_quantity">
+<<<<<<< HEAD
             <label for="in_quantity">Quantity: X {numberOfitem}</label>
+=======
+            <label for="in_quantity">Quantity: </label>
+            <input type="number" name="in_quantity" placeholder="items..."/>
+>>>>>>> refs/remotes/origin/main
           </div>
           <button>Remove Item</button>
         </div>
