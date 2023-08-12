@@ -1,15 +1,17 @@
 import React from "react";
 import "../CSS/Subtotal.css";
 import CurrencyFormat from "react-currency-format";
- 
+
 import { useContext } from "react";
 import CartContext from "../CartContext";
 
 const Subtotal = (props) => {
   const cartCtx = useContext(CartContext);
-  const numberOfCartItems= cartCtx.items.reduce((currNumber, item)=>{
-    return currNumber + item.amount;
-  },0);
+  console.log(cartCtx.items);
+  const numberOfCartItems = cartCtx.items.reduce((accumulator, curr) => {
+    return accumulator + curr.price * curr.quantity;
+  }, 0);
+
   return (
     <div className="subtotal">
       <p>
