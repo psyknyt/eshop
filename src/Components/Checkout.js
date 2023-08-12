@@ -15,7 +15,7 @@ const Checkout = (props) => {
         />
         <div>
           <h2 className="checkout_title">Your Shopping Basket</h2>
-          <CheckoutProduct />
+          <CheckoutProduct/>
         </div>
       </div>
       <div className="checkout_right">

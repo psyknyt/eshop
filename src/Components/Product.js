@@ -15,7 +15,6 @@ const Product = ({id,title,price,rating,image}) => {
   Star(rating);
 
   const cartCtx=  useContext(CartContext);
-  
   const addToBasket = () => {
     cartCtx.addItem({
       id:+id,
@@ -23,6 +22,7 @@ const Product = ({id,title,price,rating,image}) => {
       amount:price,
     });
   }
+
   return (
     <React.Fragment>
       <div className="product">
